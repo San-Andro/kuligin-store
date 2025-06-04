@@ -8,6 +8,16 @@
   </head>
   <body>
     <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/main.js">
+      
+    </script>
+    <script>
+      const redirect = sessionStorage.redirect;
+      if (redirect && redirect !== location.pathname) {
+      sessionStorage.removeItem('redirect');
+      history.replaceState(null, null, redirect);
+      }
+</script>
   </body>
+  
 </html>
