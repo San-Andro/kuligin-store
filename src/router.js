@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from './views/HomeView.vue'
 import MenuView from './views/MenuView.vue'
 import CartView from './views/CartView.vue'
@@ -34,14 +34,8 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory('/kuligin-store/'),
-  routes: [
-    { path: '/', component: HomeView },
-    { path: '/menu', component: MenuView },
-    { path: '/cart', component: CartView },
-    { path: '/checkout', component: CheckoutView },
-    { path: '/order-success', component: OrderSuccess },
-  ]
+  history: createWebHashHistory('/kuligin-store/'),
+  routes
 })
 
 export default router
