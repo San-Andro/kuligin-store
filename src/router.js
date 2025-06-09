@@ -35,7 +35,13 @@ const routes = [
 
 const router = createRouter({
   history: createWebHistory('/kuligin-store/'),
-  routes
+  routes: [
+    { path: '/', component: HomeView },
+    { path: '/menu', component: MenuView },
+    { path: '/cart', component: CartView },
+    { path: '/checkout', component: CheckoutView },
+    { path: '/order-success', component: OrderSuccess },
+  ]
 })
 
 export default router
