@@ -22,6 +22,8 @@ nav {
   padding: 20px 0;
   margin-bottom: 20px;
   border-bottom: 1px solid #eee;
+  max-width: 1500px;
+  width: 100%;
 }
 
 nav a {
